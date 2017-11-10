@@ -28,13 +28,10 @@ public class Drive extends Command
 	@Override
 	protected void execute()
 	{
-		// DUAL STICK (left stick ---> throttle, right stick ---> turning) //
-		Robot.drivetrain.tankDrive((-1.0*(OI.leftStick.getY())), (-1.0*(OI.rightStick.getX())));
+		// Use methods from your drivetrain class to make the robot wheels spin
+		// HINT use "Robot.drivetrain" to access the drivetrain class
 		
-		// SINGLE STICK (left stick) //
-		// Robot.drivetrain.tankDrive((-1.0*(OI.leftStick.getY())), (-1.0*(OI.leftStick.getX())));
-		
-		Timer.delay(0.05);  // motor update time
+		Timer.delay(0.05);  // motor update time DO NOT DELETE
 	}
 
 	// Make this return true when this Command no longer needs to run execute()
@@ -48,7 +45,7 @@ public class Drive extends Command
 	@Override
 	protected void end()
 	{
-		Robot.drivetrain.stop();
+		// use you methods from drivetrain to sotp the robot
 	}
 
 	// Called when another command which requires one or more of the same
@@ -56,6 +53,6 @@ public class Drive extends Command
 	@Override
 	protected void interrupted()
 	{
-		Robot.drivetrain.stop();
+		// use your methods from drivetrain to stop the robot
 	}
 }

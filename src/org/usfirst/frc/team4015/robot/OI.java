@@ -10,6 +10,6 @@ import org.usfirst.frc.team4015.robot.RobotMap;
 
 public class OI
 {	
-	public static Joystick leftStick = new Joystick(RobotMap.leftStickPort);
-	public static Joystick rightStick = new Joystick(RobotMap.rightStickPort);
+	// Create objects for controllers here.  Use the "Joystick" class
+	// Make sure that you make them static objects.
 }

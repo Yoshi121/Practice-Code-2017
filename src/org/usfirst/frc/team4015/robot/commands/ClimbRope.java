@@ -28,14 +28,8 @@ public class ClimbRope extends Command
 	@Override
 	protected void execute()
 	{
-		if (OI.leftStick.getRawButton(5) == true)
-		{
-			Robot.winch.spin();
-		}
-		else
-		{
-			Robot.winch.stop();
-		}
+		// use the methods that you wrote in the winch class to make the winch spin
+		// HINT use "Robot.winch" to access the winch class
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

@@ -13,37 +13,22 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Drivetrain extends Subsystem
 {	
-	public Talon left;
-	public Talon right;
-	
-	public RobotDrive chassis;
+	// Declare Talons for driveing here
+	// Declare "RobotDrive" class here (please read documentation on these classes)
 	
 	// DEFAULT CONSTRUCTOR //
 	
 	public Drivetrain()
 	{
-		left = new Talon(RobotMap.leftMotors);
-		right = new Talon(RobotMap.rightMotors);	
-		chassis = new RobotDrive(left, right);
+		// initialize Talons here
+		// Initialize drivetrain object using RobotDrive constructor and Talons
 	}
 	
-	/* =========== TANK DRIVE ===========
-	 * throttle ---> move value (Y value)
-	 * yaw ---> turn value (X value)
-	 * ================================*/
+	// write methods to move the robot wheels using the RobotDrive object
+	// make sure to include a method to stop the robot :)
 	
-	public void tankDrive(double throttle, double yaw)
-	{
-		chassis.arcadeDrive(throttle, yaw);
-	}
 	
-	// STOP //
-	
-	public void stop()
-	{
-		tankDrive(0, 0);
-	}
-
+	// don't worry about this
 	public void initDefaultCommand()
 	{
 		// Set the default command for a subsystem here.

@@ -24,19 +24,17 @@ public class MoveRamp extends Command
 	@Override
 	protected void initialize()
 	{
-		// Ramp starting position
-		Robot.pneumatics.ramp.retract();
+		// call method from pneumatics subsystem to set ramp to default starting position
 	}
 
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute()
 	{
-		if (OI.leftStick.getRawButton(4) == true)
-		{
-			Robot.pneumatics.ramp.toggle();
-			Timer.delay(1);
-		}
+		// Use your pneumatics class methods to move the ramp when you press a Joystick button
+		// HINT you will need to use the Joystick class from OI and an if statement
+		// HINT use "Robot.pneumatics" to access the pneumatics class
+		
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

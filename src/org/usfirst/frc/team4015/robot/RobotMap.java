@@ -6,6 +6,7 @@ package org.usfirst.frc.team4015.robot;
 
 public class RobotMap
 {	
+	/*
 	// JOYSTICK / GAMEPAD CONTROLLER USB ORDER //
 	
 	public static final int leftStickPort = 0;
@@ -24,5 +25,6 @@ public class RobotMap
 	// WINCH CHANNEL //
 	
 	public static final int winchChannel = 9;
+	*/
 	
 }

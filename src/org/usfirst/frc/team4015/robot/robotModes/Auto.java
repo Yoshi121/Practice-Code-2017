@@ -1,6 +1,6 @@
 package org.usfirst.frc.team4015.robot.robotModes;
 
-import org.usfirst.frc.team4015.robot.commands.DriveToBaseLine;
+//import org.usfirst.frc.team4015.robot.commands.DriveToBaseLine;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /* ===================================================
@@ -14,7 +14,7 @@ public class Auto extends CommandGroup
 	
 	public  Auto()
 	{
-		addSequential(new DriveToBaseLine());
+		//addSequential(new DriveToBaseLine());
     }
 	
 }

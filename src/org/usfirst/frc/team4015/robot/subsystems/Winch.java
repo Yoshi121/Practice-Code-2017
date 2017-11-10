@@ -10,27 +10,11 @@ import edu.wpi.first.wpilibj.Spark;
 
 public class Winch extends Subsystem
 { 
-	public Spark winchMotors;
+	// Use a "Spark" class and create methods to spin the winch.
 	
-	public Winch()
-	{
-		winchMotors = new Spark(9);
-	}
 	
-	// STOP WINCH //
 	
-	public void stop()
-	{
-		winchMotors.set(0);
-	}
-	
-	// SPIN WINCH TO REEL IN ROPE //
-	
-	public void spin()
-	{
-		winchMotors.set(-1);
-	}
-
+	// Don't worry about this
 	public void initDefaultCommand()
 	{
 		// Set the default command for a subsystem here.
