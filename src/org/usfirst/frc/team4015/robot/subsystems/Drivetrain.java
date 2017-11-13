@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Drivetrain extends Subsystem
 {	
-	// Declare Talons for driveing here
+	// Declare Talons for driving here
 	// Declare "RobotDrive" class here (please read documentation on these classes)
 	
 	// DEFAULT CONSTRUCTOR //
