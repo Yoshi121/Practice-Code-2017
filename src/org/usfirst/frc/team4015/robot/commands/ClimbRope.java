@@ -28,8 +28,15 @@ public class ClimbRope extends Command
 	@Override
 	protected void execute()
 	{
-		// use the methods that you wrote in the winch class to make the winch spin
-		// HINT use "Robot.winch" to access the winch class
+		// spin winch when switch is pressed
+		if (Robot.winch.limitSwitch.get() == true)
+		{
+			Robot.winch.spin();
+		}
+		else
+		{
+			Robot.winch.stop();
+		}
 	}
 
 	// Make this return true when this Command no longer needs to run execute()

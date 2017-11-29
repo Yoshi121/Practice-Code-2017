@@ -2,6 +2,7 @@ package org.usfirst.frc.team4015.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.DigitalInput;
 
 /* ===================================================
  * This class contains the methods required to control
@@ -10,11 +11,29 @@ import edu.wpi.first.wpilibj.Spark;
 
 public class Winch extends Subsystem
 { 
-	// Use a "Spark" class and create methods to spin the winch.
+	public Spark winchMotors;
+	public DigitalInput limitSwitch; // limit switch
 	
+	public Winch()
+	{
+		winchMotors = new Spark(9);
+		limitSwitch = new DigitalInput(0);  // limit switch
+	}
 	
+	// STOP WINCH //
 	
-	// Don't worry about this
+	public void stop()
+	{
+		winchMotors.set(0);
+	}
+	
+	// SPIN WINCH TO REEL IN ROPE //
+	
+	public void spin()
+	{
+		winchMotors.set(-1);
+	}
+	
 	public void initDefaultCommand()
 	{
 		// Set the default command for a subsystem here.
